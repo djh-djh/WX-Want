@@ -1,0 +1,22 @@
+<swiper
+ class="swiper"
+ indicator-dots="true"
+ autoplay="true"
+ interval="{{interval}}"
+ duration="{{duration}}"
+ circular="true"
+ indicator-active-color='#ffffff'
+>
+	<block wx:for="{{bannerArr}}" wx:key="index">
+		<swiper-item>
+			<navigator class="swipernav" url="">
+				<image
+				 class=""
+				 src="{{item.listpic}}"
+				 lazy-load="false"
+				/>
+			</navigator>
+		</swiper-item>
+	</block>
+</swiper>
+

@@ -1,0 +1,108 @@
+.indexcon {
+  padding-bottom: 100rpx;
+}
+.indexcon view {
+  width: 100%;
+}
+.indexcon .h2 {
+  text-align: left;
+  font-weight: 600;
+  margin: 20rpx 0;
+}
+.indexcon image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiperOne {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.indextype {
+  width: 100%;
+}
+.indextype .nav {
+  width: 100%;
+  text-align: center;
+}
+.swiperTwo {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 50rpx;
+  overflow: hidden;
+}
+.special {
+  display: flex;
+  justify-content: space-between;
+}
+.special .nav {
+  width: 49%;
+  box-shadow: 0 0 10rpx 0rpx #cccccc;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.special .nav > view {
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.special .nav image {
+  width: 100%;
+  height: 250rpx;
+}
+.special text {
+  color: #999999;
+  font-size: 24rpx;
+}
+.special .price {
+  width: 100%;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.special .price text {
+  color: red;
+}
+.hot van-tabs {
+  width: 100%;
+}
+.hot van-tabs .van-ellipsis {
+  color: #333333;
+}
+.hot van-tab {
+  margin: 10rpx 0;
+  overflow: hidden;
+}
+.hot .hotView {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+.hot .leftArr,
+.hot .rightArr {
+  width: 49%;
+}
+.hot .nav {
+  width: 100%;
+  box-shadow: 0 0 10rpx 0rpx #cccccc;
+  border-radius: 10rpx;
+  overflow: hidden;
+  float: left;
+  margin-bottom: 20rpx;
+}
+.hot .nav > view {
+  padding: 0 10rpx;
+  box-sizing: border-box;
+}
+.hot .nav image {
+  width: 100%;
+  height: 240rpx;
+}
+.loading {
+  text-align: center;
+  margin: 20rpx 0;
+}

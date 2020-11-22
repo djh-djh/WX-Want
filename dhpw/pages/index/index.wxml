@@ -1,0 +1,133 @@
+<!--index.wxml-->
+<view class="indexcon container">
+	<!-- 搜索框顶部 -->
+	<view>
+		<search></search>
+	</view>
+	<!-- 轮播 -->
+	<view class="swiperOne">
+		<lunbo bannerArr="{{bannerOne}}"></lunbo>
+	</view>
+	<!-- 分类 -->
+	<view class="indextype">
+		<van-grid column-num="5" border="{{ false }}">
+			<van-grid-item
+			 use-slot
+			 wx:for="{{ 10 }}"
+			 wx:key="index"
+			>
+				<navigator
+				 class="nav"
+				 target=""
+				 url=""
+				 hover-class="navigator-hover"
+				 open-type="navigate"
+				>
+					<image style="width: 100%; height: 100rpx;" src="../../lib/images/1.jpg" />
+					<text>你好</text>
+				</navigator>
+			</van-grid-item>
+		</van-grid>
+	</view>
+	<!-- 轮播2 -->
+	<view class="swiperTwo">
+		<lunbo bannerArr='{{bannerTwo}}'></lunbo>
+	</view>
+	<!-- 特价抢购 -->
+	<view class="h2">特价抢购</view>
+	<view class='special'>
+		<navigator
+		 class="nav"
+		 target=""
+		 url=""
+		 hover-class="navigator-hover"
+		 open-type="navigate"
+		 wx:for="{{spacilArr}}"
+		 wx:key='index'
+		>
+			<image src="{{item.litpic}}"></image>
+			<view>
+				<view class='tit'>{{item.title}}</view>
+				<text class="" >郑州</text>
+				<view class="price">
+					<text>￥30.0</text>
+					<text>1.3折起</text>
+				</view>
+			</view>
+		</navigator>
+	</view>
+	<!-- 热门推荐 -->
+	<view class="h2">热门推荐</view>
+	<view class="hot">
+		<van-tabs
+		 sticky
+		 swipeable
+		 animated
+		 active="{{ active }}"
+		 bind:change="changeType"
+		>
+			<van-tab
+			 title="{{item}}"
+			 wx:for='{{titArr}}'
+			 wx:key='index'
+			>
+				<view class="hotView">
+					<view class="leftArr">
+						<navigator
+						 class="nav"
+						 target=""
+						 url=""
+						 hover-class="navigator-hover"
+						 open-type="navigate"
+						 wx:for="{{dataLeftArr}}"
+						 wx:key='index'
+						>
+							<image src="{{item.litpic}}"></image>
+							<view>
+								<view class='tit'>{{item.shorttitle}}</view>
+								<text class="">{{item.shortvenue}}</text>
+								<view class="price">
+									<text>￥{{item.shouyeprice}}</text>
+									<text>￥{{item.mprices}}</text>
+								</view>
+							</view>
+						</navigator>
+					</view>
+					<view class="rightArr">
+						<navigator
+						 class="nav"
+						 target=""
+						 url=""
+						 hover-class="navigator-hover"
+						 open-type="navigate"
+						 wx:for="{{dataRightArr}}"
+						 wx:key='index'
+						>
+							<image src="{{item.litpic}}"></image>
+							<view>
+								<view class='tit'>{{item.shorttitle}}</view>
+								<text class="">{{item.shortvenue}}</text>
+								<view class="price">
+									<text>￥{{item.shouyeprice}}</text>
+									<text>￥{{item.mprices}}</text>
+								</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+			</van-tab>
+		</van-tabs>
+	</view>
+	<!-- 加载loading -->
+	<view class="loading" wx:if="{{loading}}">
+		<van-loading
+		 size="24px"
+		 type="spinner"
+		 color="#1989fa"
+		>
+		</van-loading>
+	</view>
+	<!-- 页面底部 -->
+	<footer></footer>
+</view>
+

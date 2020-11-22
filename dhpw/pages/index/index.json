@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tab-bar":"../../custom-tab-bar/index",
+    "lunbo":"../../component/swiper/swiper",
+    "footer":"../../component/footer/footer",
+    "search":"../../component/search/search"
+  },
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 100
+}

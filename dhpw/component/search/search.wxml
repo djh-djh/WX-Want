@@ -1,0 +1,8 @@
+<!--component/search/search.wxml-->
+<view class='In_search'>
+  <navigator class="city" target="" url="" hover-class="navigator-hover" open-type="navigate" style="margin-left:10rpx;">
+    <view class='cityName'>{{dataCity}}</view>
+    <van-icon name="arrow-down" />
+  </navigator>
+  <view class="search"><van-icon class='searchIcon' name="search" />请输入关键词进行搜索</view>
+</view>

@@ -1,0 +1,44 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine">
+	<view class="mineImg">
+		<view wx:if="{{login}}">
+			<van-image
+			 round
+			 width="100px"
+			 height="100px"
+			 fit="cover"
+			 src="{{avatarUrl}}"
+			/>
+			<text>{{nickName}}</text>
+		</view>
+		<view wx:else>
+			<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+		</view>
+	</view>
+	<view class="mineNav">
+		<view>
+			<navigator class="nav">演出订单
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">景区订单
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">我的收藏
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">缺货登记
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">等待开售
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">我的地址
+				<van-icon name="arrow" />
+			</navigator>
+			<navigator class="nav">我的问答
+				<van-icon name="arrow" />
+			</navigator>
+		</view>
+	</view>
+</view>
+

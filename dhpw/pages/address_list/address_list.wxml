@@ -1,0 +1,35 @@
+<!--pages/address_list/address_list.wxml-->
+<view class="addressList view">
+	<view class="hot">
+		<text>热门城市</text>
+		<view class="hotbox">
+			<view
+			 class="hotcity"
+			 wx:for="{{hotcity}}"
+			 wx:key="index"
+			>{{item}}
+			</view>
+		</view>
+	</view>
+	<view class="citybox">
+		<van-index-bar>
+			<view
+			 wx:for="{{type}}"
+			 wx:for-key="typeIndex"
+			 wx:key="typeIndex"
+			>
+				<van-index-anchor index="{{item.type}}">{{item.type}}</van-index-anchor>
+				<van-cell
+				 wx:for="{{item.arr}}"
+				 wx:for-item="city"
+				 wx:for-key="cityIndex"
+				 wx:key="cityIndex"
+				 bindtap="changeCity"
+				 data-item="{{city.name}}"
+				 title="{{city.name}}"
+				/>
+			</view>
+		</van-index-bar>
+	</view>
+</view>
+

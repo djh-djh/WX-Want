@@ -1,0 +1,8 @@
+<!-- 页面底部 -->
+<view class="footer">
+	<view bindtap="phoneCall">客服电话:
+		<text class="phone">15939398544</text>
+	</view>
+	<view>工作时间：周一到周五(9:00-18:00)</view>
+</view>
+
